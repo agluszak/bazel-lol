@@ -1,3 +1,5 @@
+Bazel silently refuses to copy over folders starting with `bazel-` into the sandbox and it will fail at runtime despite the analysis phase going fine 
+
 ```
 ➜  bazel-repro git:(main) ✗ bazel build bazel-lol
 INFO: Analyzed target //bazel-lol:bazel-lol (0 packages loaded, 0 targets configured).
